@@ -1,0 +1,61 @@
+import type { Bar } from '../types'
+
+/** 上海附近示例酒吧 — 坐标为 GCJ-02 量级示意，接入真实数据后由 Supabase + 高德选点替换 */
+export const MOCK_BARS: Bar[] = [
+  {
+    id: 'bar-hop-house',
+    name: 'The Hop House',
+    address: '徐汇区某路 88 号',
+    city: '上海',
+    lng: 121.437,
+    lat: 31.2005,
+    timezone: 'Asia/Shanghai',
+    noiseLevel: 'quiet',
+    hasNaDrinks: true,
+    tonightPlaylist: '爵士 / Neo-Soul',
+    floorPlanUrl: undefined,
+    planCountToday: 14,
+    dominantVibe: 'alone',
+    menu: [
+      { id: 'm1', name: '西海岸 IPA', priceCny: 58, intentCount: 6 },
+      { id: 'm2', name: '新英格兰浑浊 IPA', priceCny: 62, intentCount: 9 },
+      { id: 'm3', name: '无酒精起泡', priceCny: 38, intentCount: 2 },
+    ],
+  },
+  {
+    id: 'bar-hidden-door',
+    name: 'The Hidden Door',
+    address: '静安区某弄 16 号',
+    city: '上海',
+    lng: 121.451,
+    lat: 31.228,
+    timezone: 'Asia/Shanghai',
+    noiseLevel: 'medium',
+    hasNaDrinks: false,
+    tonightPlaylist: '90s Alt Rock',
+    planCountToday: 23,
+    dominantVibe: 'social',
+    menu: [
+      { id: 'h1', name: '古典鸡尾酒', priceCny: 78, intentCount: 4 },
+      { id: 'h2', name: '隐藏特调 · 午夜蓝', priceCny: 88, intentCount: 12 },
+    ],
+  },
+  {
+    id: 'bar-moon',
+    name: '月下独酌 Lab',
+    address: '黄浦区滨江某段',
+    city: '上海',
+    lng: 121.499,
+    lat: 31.239,
+    timezone: 'Asia/Shanghai',
+    noiseLevel: 'loud',
+    hasNaDrinks: true,
+    tonightPlaylist: '电子 / House',
+    planCountToday: 31,
+    dominantVibe: 'celebrate',
+    menu: [
+      { id: 'l1', name: '香槟杯装精酿', priceCny: 48, intentCount: 15 },
+      { id: 'l2', name: 'Shot 三连', priceCny: 66, intentCount: 21 },
+    ],
+  },
+]
